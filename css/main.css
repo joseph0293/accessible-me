@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: 'Roboto';
   background-color: white;
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 .container {
