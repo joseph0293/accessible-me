@@ -1,21 +1,36 @@
+/* smooth scroll, font for page to Roboto */
 html {
   scroll-behavior: smooth;
-}
-
-body {
   font-family: 'Roboto';
+}
+/* Changes background colour to white */
+body {
   background-color: white;
   margin: 0;
   padding: 0;
 }
 
+/* styling skip link */
+.skiplink {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: darkolivegreen;
+}
+
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto', Helvetica, sans-serif;
+h3 {
+  color: darkolivegreen;
+}
+
+/* Hover state for accessibility */
+.skiplink:hover,
+.skiplink:focus {
+  font-weight: 800;
 }
 
 .container {
@@ -32,13 +47,24 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  /* Adds a bit of gap between navigation and image */
+  margin: 10px 0; 
   padding: 0;
 }
 
 .main-nav ul li {
-  flex: 1;
+  padding: 10px;
+  /* changes flex to flex-grow to keep nav elements equally spaced */
+  flex-grow: 1;
   text-align: center;
+}
+
+/* adjusts navigation menu for accessibility */
+
+.main-nav ul li:hover,
+.main-nav ul li:focus {
+  background-color: darkolivegreen;
+  color: white;
 }
 
 .main-nav ul li a {
@@ -50,10 +76,11 @@ img {
 
 form input,
 form textarea {
+  margin-top: 5px;
   display: block;
   width: 100%;
   margin-bottom: 1rem;
-  padding: .5rem 1rem;
+  padding: .5rem;
 }
 
 form textarea {
@@ -68,6 +95,14 @@ form button {
   border: 2px solid black;
   padding: 1rem;
   text-transform: uppercase;
+}
+
+/* Adjusts button hover state for accessibility */
+form button:hover,
+form button:focus {
+  background-color: darkolivegreen;
+  color: white;
+  font-weight: 600;
 }
 
 .site-footer {

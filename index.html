@@ -22,7 +22,7 @@
 <body>
   <div class="container">
     <!-- Adds Skip link for ADHD peeps -->
-    <a href="#maincontent"  id="toptop">Skip To Content &darr;</a>
+    <a href="#maincontent"  id="toptop" class="skiplink">Skip To Content &darr;</a>
     <header class="site-header" role="banner">
       <h1>Jam Box Studios</h1>
       <nav class="main-nav" role="navigation">
@@ -33,12 +33,12 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <!-- Adds alt text to image for screen readers-->
-      <img src="https://placekitten.com/1200/980" class="banner" alt="Image of a kitten">
+      <!-- Adds alt text to image for screen readers -->
+      <img src="https://placekitten.com/1200/980" class="banner" alt="Image of studio space at Jambox " aria-details="aboutjambox">
     </header>
     <main class="main-content" id="maincontent" role="main">
       <h2>Welcome to Jam Box</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
+      <p id="aboutjambox">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa
         eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio
         quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam
@@ -79,7 +79,7 @@
     </main>
     <footer class="site-footer" role="contentinfo">
       &copy; 2021 Jam Box Studios
-      <a href="#toptop">Back to Top &uarr;</a>
+      <a href="#toptop" class="skiplink">Back to Top &uarr;</a>
     </footer>
   </div>
 </body>
