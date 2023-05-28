@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
   font-family: 'Roboto';
 }
+
 /* Changes background colour to white */
 body {
   background-color: white;
@@ -18,13 +19,17 @@ body {
   padding: 10px;
   font-weight: 500;
   font-size: 16px;
-  color: darkolivegreen;
+  color: darkred;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 h1,
 h2,
 h3 {
-  color: darkolivegreen;
+  color: darkred;
 }
 
 /* Hover state for accessibility */
@@ -48,12 +53,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   /* Adds a bit of gap between navigation and image */
-  margin: 10px 0; 
+  margin: 0;
   padding: 0;
 }
 
 .main-nav ul li {
-  padding: 10px;
+  padding: 15px;
   /* changes flex to flex-grow to keep nav elements equally spaced */
   flex-grow: 1;
   text-align: center;
@@ -63,7 +68,7 @@ img {
 
 .main-nav ul li:hover,
 .main-nav ul li:focus {
-  background-color: darkolivegreen;
+  background-color: darkred;
   color: white;
 }
 
@@ -100,7 +105,7 @@ form button {
 /* Adjusts button hover state for accessibility */
 form button:hover,
 form button:focus {
-  background-color: darkolivegreen;
+  background-color: darkred;
   color: white;
   font-weight: 600;
 }
